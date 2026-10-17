@@ -1,0 +1,17 @@
+# Copy to product repo and replace placeholders before enabling.
+name: CI Example
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  policy-example:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4 # Pin audited full SHA for production
+      - name: Confirm product adapter is configured
+        run: |
+          echo 'Replace with real lint, test, build and security checks.'
+          exit 1
