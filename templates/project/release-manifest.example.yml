@@ -1,0 +1,15 @@
+release: v2026.10.17-1
+commit: REPLACE_WITH_FULL_COMMIT_SHA
+artifacts:
+  backend:
+    image: ghcr.io/OWNER/APP@sha256:REPLACE_WITH_DIGEST
+  frontend:
+    checksum: sha256:REPLACE_WITH_DIGEST
+  android:
+    checksum: sha256:REPLACE_WITH_DIGEST
+schema:
+  migration: REPLACE_WITH_SCHEMA_REVISION
+  previous_app_compatible: true
+approvals:
+  staging: REQUIRED
+  production: REQUIRED
