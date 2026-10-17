@@ -1,0 +1,11 @@
+# Adapt to each product. Placeholders are NOT production-ready.
+.PHONY: setup dev test lint check
+setup:
+	@echo "Implement stack-specific setup"
+dev:
+	@echo "Implement local runtime"
+test:
+	@echo "Implement tests"
+lint:
+	@echo "Implement lint"
+check: lint test
