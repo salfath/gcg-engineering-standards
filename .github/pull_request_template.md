@@ -1,17 +1,29 @@
-## Jira / issue
+## Tracked issue / originating request
 
-## What changed and why
+## Problem and resulting behavior
 
-## Tests and evidence
+## Controls and product impact
 
-## Security/privacy impact
+<!-- Changed IDs, applicable products, stricter local invariants and compatibility. -->
 
-## Database and API compatibility
+## Validation and evidence
 
-## Deployment / rollback considerations
+<!-- Exact commands/results, skipped checks and reasons. No sensitive evidence. -->
+
+## Security/privacy and release/recovery impact
+
+## Adoption and governance
+
+<!-- Migration window, proposed owner roles, exception handling; no approval implied. -->
+
+## AI assistance
+
+<!-- Material assistance, validation limits and domain-aware human review needed. -->
 
 ## Checklist
-- [ ] Local checks pass
-- [ ] Documentation updated
-- [ ] No secrets or production personal data
+
+- [ ] Relevant local checks pass; omitted checks have rationale
+- [ ] Changed controls, examples and documentation agree
+- [ ] No secrets, sensitive topology or production personal data
 - [ ] Independent human reviewer requested
+- [ ] Policy changes remain proposed until Engineering Lead approval is recorded

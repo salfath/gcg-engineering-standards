@@ -1,15 +1,49 @@
-release: v2026.10.17-1
-commit: REPLACE_WITH_FULL_COMMIT_SHA
+# Example identity record; NOT a certified or deployable release.
+# Validate all placeholders, hashes and evidence before allowing promotion.
+manifest_version: 1
+release: REPLACE_CALVER
+status: unconfigured
+source:
+  repository: REPLACE_CANONICAL_SOURCE
+  commit: REPLACE_FULL_COMMIT_SHA
+build:
+  run: REPLACE_CI_RUN_REFERENCE
+  builder: REPLACE_APPROVED_BUILDER
+  dependency_lock_digest: "sha256:REPLACE_DIGEST"
+  provenance: REPLACE_BUILD_EVIDENCE
 artifacts:
   backend:
-    image: ghcr.io/OWNER/APP@sha256:REPLACE_WITH_DIGEST
+    uri: REPLACE_IMMUTABLE_IMAGE_OR_BUNDLE
+    digest: "sha256:REPLACE_DIGEST"
   frontend:
-    checksum: sha256:REPLACE_WITH_DIGEST
-  android:
-    checksum: sha256:REPLACE_WITH_DIGEST
+    uri: REPLACE_IMMUTABLE_BUNDLE
+    digest: "sha256:REPLACE_DIGEST"
+clients:
+  - platform: REPLACE_PLATFORM
+    version: REPLACE_VERSION
+    uri: REPLACE_VERSIONED_ARTIFACT
+    digest: "sha256:REPLACE_DIGEST"
+    signature_evidence: REPLACE_EVIDENCE_OR_REVIEWED_NOT_APPLICABLE
+    backend_compatibility: REPLACE_SUPPORTED_RANGE
 schema:
-  migration: REPLACE_WITH_SCHEMA_REVISION
-  previous_app_compatible: true
-approvals:
-  staging: REQUIRED
-  production: REQUIRED
+  migration: REPLACE_REVISION
+  previous_app_compatible: false
+  compatibility_evidence: REPLACE_TEST_EVIDENCE
+  rollback_window: REPLACE_WINDOW
+rollback:
+  validated_manifest_digest: "sha256:REPLACE_PREVIOUS_MANIFEST_DIGEST"
+  current_schema_compatibility_evidence: REPLACE_EVIDENCE
+release_notes: REPLACE_REFERENCE
+# UAT and production approvals are separate append-only records bound to the
+# digest of this identity manifest. Updating an approval does not change artifacts.
+promotion_evidence:
+  record_reference: REPLACE_APPROVAL_AND_DEPLOYMENT_RECORD
+  required_fields:
+    - manifest_digest
+    - verified_artifact_digests
+    - staging_uat_candidate_and_outcomes
+    - staging_approver_and_timestamp
+    - production_approver_and_timestamp
+    - product_preflight_result
+    - deployment_actor_timestamps_and_result
+    - smoke_and_monitoring_result
