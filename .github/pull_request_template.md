@@ -1,4 +1,4 @@
-## Jira / issue
+## Issue / tracker link
 
 ## What changed and why
 
@@ -9,6 +9,11 @@
 ## Database and API compatibility
 
 ## Deployment / rollback considerations
+
+## Standard impact
+- [ ] This PR changes or clarifies a MUST rule
+- [ ] Exception register updated (if applicable)
+- [ ] Product adapters reviewed for compatibility
 
 ## Checklist
 - [ ] Local checks pass
