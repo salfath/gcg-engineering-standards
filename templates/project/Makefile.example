@@ -1,11 +1,25 @@
-# Adapt to each product. Placeholders are NOT production-ready.
+# Copy to the product root and replace the command variables.
+# The unconfigured adapter deliberately fails every public entry point.
 .PHONY: setup dev test lint check
+
+SETUP_CMD ?= echo "Configure SETUP_CMD" >&2; exit 1
+DEV_CMD ?= echo "Configure DEV_CMD" >&2; exit 1
+TEST_CMD ?= echo "Configure TEST_CMD" >&2; exit 1
+LINT_CMD ?= echo "Configure LINT_CMD" >&2; exit 1
+# Include dependency/secret, migration/contract and applicable other checks here.
+CHECK_EXTRA_CMD ?= echo "Configure CHECK_EXTRA_CMD" >&2; exit 1
+
 setup:
-	@echo "Implement stack-specific setup"
+	@$(SETUP_CMD)
+
 dev:
-	@echo "Implement local runtime"
+	@$(DEV_CMD)
+
 test:
-	@echo "Implement tests"
+	@$(TEST_CMD)
+
 lint:
-	@echo "Implement lint"
+	@$(LINT_CMD)
+
 check: lint test
+	@$(CHECK_EXTRA_CMD)

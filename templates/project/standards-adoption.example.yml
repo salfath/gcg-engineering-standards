@@ -1,0 +1,38 @@
+# Example only. Resolve placeholders and review before adoption.
+record_status: unconfigured
+product: REPLACE_PRODUCT
+risk_profile: REPLACE_REVIEWED_RISK_AND_TEST_RECOVERY_REQUIREMENTS
+canonical_repositories:
+  - component: REPLACE_COMPONENT
+    repository: REPLACE_CANONICAL_REPOSITORY
+    integration_branch: main
+handbook:
+  repository: REPLACE_APPROVED_CANONICAL_HANDBOOK
+  approved_ref: REPLACE_VERSION_OR_FULL_COMMIT
+  approval_evidence: REPLACE_RESTRICTED_OR_PUBLIC_REFERENCE
+adapter_path: REPLACE_PRODUCT_ADAPTER_PATH
+assessed_sources:
+  - component: REPLACE_COMPONENT
+    commit: REPLACE_FULL_COMMIT
+assessed_at: null
+owners:
+  technical: REPLACE_OWNER
+  reviewer: REPLACE_INDEPENDENT_REVIEWER
+  deployment: REPLACE_OWNER
+  incident: REPLACE_CONTACT_REFERENCE
+controls:
+  # Enumerate EVERY control from the pinned version's register.
+  # Valid: PASS, GAP, EXCEPTION, NOT_APPLICABLE, NOT_ASSESSED.
+  - id: GCG-SCM-01
+    result: NOT_ASSESSED
+    scope: REPLACE_REPOSITORY_AND_BRANCH
+    owner: REPLACE_OWNER
+    evidence: []
+    remediation_issue: REPLACE_ISSUE
+    exception_reference: null
+    next_review_at: null
+adoption:
+  phase: inventory
+  decision: pending
+  approver: null
+  approved_at: null
