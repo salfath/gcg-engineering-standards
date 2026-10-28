@@ -9,6 +9,9 @@
 - Make example commands fail closed; expand adoption/release/PR records.
 - Add local Markdown link validation and a least-privilege documentation workflow.
 
+- Add the dated Scola source assessment and adoption acceptance gates.
+- Allow product-specific protected integration branches and component repository boundaries.
+
 ## 0.1.0 — 2026-10-17
 
 - Initial proposed GCG engineering policies, checklists and templates.

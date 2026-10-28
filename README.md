@@ -27,7 +27,7 @@ compliant. Record the adopted version, gaps, owners and evidence.
 ## Golden path
 
 Tracked issue → acceptance criteria → local branch and checks → PR + independent
-review + CI → squash merge to main → immutable build → staging/UAT → recorded
+review + CI → merge to protected integration branch → immutable build → staging/UAT → recorded
 approval → production promotion of the same digest → monitor.
 
 **Never edit source directly on production servers or deploy production from
@@ -35,7 +35,10 @@ developer laptops.** Approved operations run through the product deployment path
 
 ## Repository model
 
-One repository per independently owned application. Each product identifies its
+Repository boundaries follow ownership and independently releasable components.
+A product MAY use separate frontend/backend repositories or a monorepo; its
+adapter MUST identify component owners, shared platform dependencies and how
+compatible component revisions are bound into one release. Each product identifies its
 canonical source, build and release repositories; a fork does not silently become
 canonical. Product adapters implement this handbook for their stack without
 weakening product safety invariants.
@@ -51,6 +54,8 @@ weakening product safety invariants.
   [exception template](templates/project/exception.md).
 - See the [CBT pilot proposal](docs/adoption/cbt-pilot.md) for concrete gaps and
   acceptance gates. It is not a product certification.
+- See the [Scola adoption proposal](docs/adoption/scola.md) for the Vue/Odoo
+  adapter boundary, source-assessed gaps and phased acceptance gates.
 
 Samples are deliberately not ready-to-run production deployments. Placeholder
 commands must fail. Run `python3 scripts/check_handbook.py` to check local links.

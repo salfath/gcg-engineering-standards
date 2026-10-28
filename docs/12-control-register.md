@@ -16,7 +16,7 @@ reviewed rationale. Neither a target nor a template is evidence of a PASS.
 | GCG-GOV-02 | Governed deviations and exceptions | Risk, compensating control, approver, expiry, remediation issue | Engineering Lead |
 | GCG-DEV-01 | Reproducible development | Clean-machine setup, runtime/dependency locks, synthetic seeds | Product technical owner |
 | GCG-DEV-02 | Honest command interface | setup/dev/test/lint/check mapping, nonzero failures, local/CI parity | Product technical owner |
-| GCG-SCM-01 | Protected main/tags and independent review | Configuration evidence plus missing-review/failed-check merge-block exercise | Repository administrator |
+| GCG-SCM-01 | Protected integration branches/tags and independent review | Configuration evidence plus missing-review/failed-check merge-block exercise | Repository administrator |
 | GCG-CI-01 | Mandatory PR quality gate | Required aggregate check; passing/failing runs on reviewed SHA | CI owner |
 | GCG-CI-02 | Safe workflow execution | Audited SHA-pinned actions, least privilege, no production secrets in PR jobs | CI/security owner |
 | GCG-ENG-01 | Requirements and domain integrity | Acceptance criteria, ADRs, API compatibility and transaction/retry tests as applicable | Product technical owner |
