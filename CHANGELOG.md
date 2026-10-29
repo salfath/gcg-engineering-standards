@@ -1,6 +1,13 @@
 # Changelog
 
-## Unreleased — proposed, pending Engineering Lead approval
+## 0.2.0 — 2026-10-29
+
+- Record owner ratification of the exact consolidated normative baseline.
+- Apply policy immediately without a blanket calendar transition waiver.
+- Keep regression, independent review, recovery and production authorization
+  acceptance separate from policy approval and product compliance.
+
+### Consolidated baseline
 
 - Consolidate universal governance, verifiable controls, testing, security and operations.
 - Use one protected development trunk (`main`) and dev → staging → production artifact promotion.
