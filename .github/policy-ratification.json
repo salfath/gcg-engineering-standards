@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "version": "0.2.0",
+  "normative_baseline_commit": "bdc6b79a53730ba6f67bc88a2a5500992a8d579f",
+  "owner": "salfath",
+  "deputy_and_independent_implementation_reviewer": "alfathsal",
+  "owner_direction": "Apply immediately without a calendar migration waiver; application activation remains subject to regression, review and recovery gates.",
+  "effective_date": "2026-10-29",
+  "calendar_transition_waiver": false,
+  "blanket_exceptions": false,
+  "approval_scope": "engineering policy and assigned ownership; not product compliance or production deployment",
+  "implementation_review_required": true,
+  "source": "Explicit owner direction in assisted implementation on 2026-10-29",
+  "publication_status": "proposed_for_main_and_tag",
+  "zero_regression_guarantee": false
+}

@@ -5,9 +5,15 @@
 - **SHOULD**: default recommendation; deviations need rationale in an ADR.
 - **MAY**: team choice.
 
-This handbook remains draft until Engineering Lead records approval of an exact
-version or commit, effective date and migration window. A merged proposal alone
-does not certify a product or approve a production deployment.
+Version 0.2.0 is ratified by the owner, effective 2026-10-29, for normative baseline
+`bdc6b79a53730ba6f67bc88a2a5500992a8d579f`; see the
+[ratification record](../.github/policy-ratification.json). Future policy versions
+require approval of an exact version/commit and effective date. Existing products
+may adopt immediately: a calendar transition window is optional and never a blanket
+waiver. Application cutover still requires the applicable regression, independent
+review, immutable identity, recovery and authorization gates. No absolute absence
+of regressions can be promised by documentation or tests. A policy merge does not
+certify a product or approve a production deployment.
 
 ## Ownership and document hierarchy
 

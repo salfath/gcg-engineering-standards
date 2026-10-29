@@ -1,6 +1,6 @@
 # Verifiable control register
 
-**Status:** Proposed controls; approval/adoption follows
+**Status:** v0.2.0 controls; version authority and product adoption follow
 [governance](01-governance.md). This register summarizes the normative chapters;
 it does not replace their detail. Product owners map each control to applicable
 commands, configuration and evidence in their adapter.

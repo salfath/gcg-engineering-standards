@@ -1,7 +1,9 @@
 # GCG Engineering Standards
 
-**Status:** Draft v0.1.0 — pending GCG Engineering Lead approval.
-Unreleased proposals are not approved policy.
+**Status:** Owner-ratified v0.2.0, effective 2026-10-29.
+Normative baseline: `bdc6b79a53730ba6f67bc88a2a5500992a8d579f`.
+The [ratification record](.github/policy-ratification.json) identifies authority and scope.
+Publication of this change/tag does not certify an application or authorize deployment.
 **Scope:** All current and future GCG applications and services.
 
 This is the technology-neutral engineering handbook. **MUST** = mandatory once
